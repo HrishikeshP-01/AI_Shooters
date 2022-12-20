@@ -36,6 +36,7 @@ public:
 	ACharacterBase();
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "Components")
 		class USkeletalMeshComponent* Weapon;
+	FHitResult TraceProvider(FVector Start, FVector End);
 	UPROPERTY(BlueprintReadOnly, Category = "AI")
 		bool Dead = false;
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = "AI")
